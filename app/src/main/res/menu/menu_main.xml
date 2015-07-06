@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_verify_pw3" android:title="@string/action_enable_edit_mode"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_change_pw1" android:title="@string/action_change_pw1"
+        android:orderInCategory="200" app:showAsAction="never" />
+    <item android:id="@+id/action_change_pw3" android:title="@string/action_change_pw3"
+        android:orderInCategory="300" app:showAsAction="never" />
+    <item android:id="@+id/action_different_card" android:title="@string/action_different_card"
+        android:orderInCategory="400" app:showAsAction="never" />
+</menu>

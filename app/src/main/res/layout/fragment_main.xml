@@ -1,0 +1,420 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity$PlaceholderFragment"
+        android:orientation="vertical">
+        <TextView android:text="@string/warning_tap_card_to_view"
+            android:id="@+id/id_action_reqiured_warning"
+            android:layout_width="wrap_content"
+            android:layout_height="256dp"
+            android:gravity="center|center_horizontal"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:autoLink="web"/>
+
+        <LinearLayout
+            android:id="@+id/id_application_id_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_application_id"
+                android:id="@+id/id_application_id_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_application_id_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_serialno_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_serialno"
+                android:id="@+id/id_serialno_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_serialno_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_version_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_version"
+                android:id="@+id/id_version_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_version_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_manufacturer_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_manufacturer"
+                android:id="@+id/id_manufacturer_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_manufacturer_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/id_name_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_cardholder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_name_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_name"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_name_content"
+                android:layout_alignBottom="@+id/btn_edit_name"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_name"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_lang_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_language_prefs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_lang_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_lang"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_lang_content"
+                android:layout_alignBottom="@+id/btn_edit_lang"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_lang"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_sex_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_sex_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_sex"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_sex_content"
+                android:layout_alignBottom="@+id/btn_edit_sex"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_sex"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_url_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_url_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_url"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_url_content"
+                android:layout_alignBottom="@+id/btn_edit_url"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_url"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_logindata_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_login_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_logindata_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_logindata"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_logindata_content"
+                android:layout_alignBottom="@+id/btn_edit_logindata"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_logindata"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/id_forcesig_container"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_signature_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:id="@+id/id_forcesig_label"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/btn_edit_forcesig"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_forcesig_content"
+                android:layout_alignBottom="@+id/btn_edit_forcesig"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_forcesig"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/lbl_edit" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/id_keyattributes_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_key_attributes"
+                android:id="@+id/id_keyattributes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_keyattributes_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_pinlengths_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_max_pin_lengths"
+                android:id="@+id/id_pinlengths_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_pinlengths_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_pinretry_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_pin_retry_counter"
+                android:id="@+id/id_pinretry_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_pinretry_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_sigcount_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_signature_counter"
+                android:id="@+id/id_sigcount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_sigcount_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_sigkey_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_signature_key"
+                android:id="@+id/id_sigkey_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_sigkey_fingerprint_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+            <TextView android:text="@string/lbl_created"
+                android:id="@+id/id_sigkey_timestamp_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_enckey_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_encryption_key"
+                android:id="@+id/id_enckey_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_enckey_fingerprint_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+            <TextView android:text="@string/lbl_created"
+                android:id="@+id/id_enckey_timestamp_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/id_authkey_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView android:text="@string/lbl_authentication_key"
+                android:id="@+id/id_authkey_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="left"
+                android:textStyle="bold" />
+            <TextView android:text="@string/lbl_placeholder"
+                android:id="@+id/id_authkey_fingerprint_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+            <TextView android:text="@string/lbl_created"
+                android:id="@+id/id_authkey_timestamp_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
